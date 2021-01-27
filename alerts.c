@@ -3,8 +3,8 @@
 
 void check_and_alert(float maxThreshold, alerter_funcptr alerters[], struct Stats computedStats)
 {
-  int index =0;
-  int func_call_nos = 2;
+//  int index =0;
+//  int func_call_nos = 2;
   /* checking if the max and threshold is breached */
   if(computedStats.max >  maxThreshold)
   {
