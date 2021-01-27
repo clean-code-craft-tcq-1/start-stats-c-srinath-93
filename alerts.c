@@ -3,20 +3,17 @@
 
 void check_and_alert(float maxThreshold, alerter_funcptr alerters[], struct Stats computedStats)
 {
-//  int index =0;
-//  int func_call_nos = 2;
+  int index =0;
+  int func_call_nos = 2;
   /* checking if the max and threshold is breached */
   if(computedStats.max >  maxThreshold)
   {
-//    for(;index<func_call_nos;index++)
-//    {
+    for(;index<func_call_nos;index++)
+    {
       /* calling email and led alert function when max threshold is breached */
-//      alerters[index];
+      (*alerters[index])();
       
-//    }
-    /* calling email and led alert function when max threshold is breached */
-    emailAlerter();
-    ledAlerter();
+    }
   }
   else
   {
